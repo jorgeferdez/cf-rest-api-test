@@ -1,6 +1,9 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname.startsWith('/test')) {
+      return Response.json({ message: 'test' });
+    }
     if (url.pathname.startsWith('/api/')) {
       const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + env.API_KEY;
 
