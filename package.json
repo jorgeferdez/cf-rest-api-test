@@ -1,0 +1,14 @@
+{
+  "name": "cf-rest-api-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler pages dev ./pages"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}
